@@ -363,6 +363,25 @@ a:hover {
   line-height: 1.6;
 }
 
+.project-card.has-thumb {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+}
+
+.project-thumb {
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.project-body {
+  flex: 1;
+  min-width: 0;
+}
+
 /* ==========================================================================
    Page title
    ========================================================================== */
@@ -481,5 +500,12 @@ a:hover {
     gap: 0.6rem;
   }
   .project-links { align-self: flex-start; }
+  .project-card.has-thumb {
+    flex-direction: column;
+  }
+  .project-thumb {
+    width: 100%;
+    height: auto;
+  }
   .post-title { font-size: 1.5rem; }
 }
