@@ -509,3 +509,15 @@ a:hover {
   }
   .post-title { font-size: 1.5rem; }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color:        #e0e0e0;
+    --text-muted:        #a8a8a8;
+    --bg:                #1a1a1a;
+    --bg-secondary:      #242424;
+    --border:            #333333;
+    --theme-color:       #58a6f7;
+    --theme-hover:       #79c0ff;
+  }
+}

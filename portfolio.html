@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research — Tristan Lecourtois</title>
+  <title>Projects — Ahmed Loughzali</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,13 +23,13 @@
 
   <!-- ===== Navbar ===== -->
   <nav class="navbar">
-    <a href="index.html" class="navbar-brand">Tristan Lecourtois</a>
+    <a href="index.html" class="navbar-brand">Ahmed Loughzali</a>
     <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-nav').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
     <ul class="navbar-nav">
       <li><a href="index.html">About</a></li>
-      <li><a href="portfolio.html" class="active">Research</a></li>
+      <li><a href="portfolio.html" class="active">Projects</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="images/Resume.pdf" target="_blank">CV</a></li>
     </ul>
@@ -38,7 +38,7 @@
   <!-- ===== Main content ===== -->
   <main class="page-content">
 
-    <h1 class="page-title">Research</h1>
+    <h1 class="page-title">Projects</h1>
 
     <div class="projects-list">
 
@@ -46,140 +46,119 @@
       <div class="project-card">
         <div class="project-header">
           <div class="project-title">
-            JEPA-Histo: Joint-Embedding Predictive Architecture for Histopathology Representation Learning
+            Drone detection using Spiked Neural Networks
           </div>
           <div class="project-links">
-            <a href="https://github.com/TristanLecourtois/JEPA-Histo"
+            <a href="https://github.com/ahmedloug/PDR-detection-de-drone-IMT"
                class="badge-link badge-github" target="_blank" rel="noopener">
               <i class="fab fa-github"></i> GitHub
             </a>
+            <a href="images/Detection_de_drone_IEEE.pdf"
+               class="badge-link badge-report" target="_blank" rel="noopener">
+              <i class="fas fa-file-alt"></i> Paper
+            </a>
           </div>
         </div>
-        <span class="project-date">March 2026</span>
+        <span class="project-date">October 2025 - March 2026</span>
         <p class="project-description">
-          Investigated I-JEPA, a self-supervised method learning representations by predicting missing
-          image regions in latent space as a pretraining strategy for H&amp;E-stained whole-slide image
-          analysis. Pretrained ViT-S/8 encoders on PatchCamelyon and evaluated on linear probing and
-          few-shot classification
+          Wrote a review paper on different ways to detect drones with a focus on spiking neural networks. 
+          Fine tuned several spiking neural network architectures (Spiking YOLOv8, Spiking SSD ...)
+          on a fraction of the FRED dataset for drone detection. Achieved 92% accuracy with a 69M parameters model . 
         </p>
       </div>
 
       <!-- Project 2 -->
       <div class="project-card has-thumb">
-        <img class="project-thumb" src="images/protein.png" alt="Protein Attention Explainer">
+        <img class="project-thumb" src="images/tmr.png" alt="Text to Motion Retrieval">
         <div class="project-body">
           <div class="project-header">
             <div class="project-title">
-              Protein Attention Explainer
+              Text to motion retrival using contrastive learning 
             </div>
             <div class="project-links">
-              <a href="https://github.com/TristanLecourtois/protein-attention-explainer"
+              <a href="https://github.com/ahmedloug/Text-to-motion-retrieval"
                  class="badge-link badge-github" target="_blank" rel="noopener">
                 <i class="fab fa-github"></i> GitHub
               </a>
             </div>
           </div>
-          <span class="project-date">March 2026</span>
+          <span class="project-date">February 2026</span>
           <p class="project-description">
-            Interactive 3D visualization tool projecting ESMFold attention maps (33 layers × 20 heads)
-            onto predicted protein structures in Mol*. Built with Python, React, and FastAPI: ESMFold
-            predicts structure from sequence, attention hooks extract the full [L, H, N, N] tensor with
-            APC correction, and Mol* renders cartoon representations colored by attention intensity.
+            Top 3 solution for a multimodal Kaggle competition retrieving 3D motion capture sequences from text. 
+            Designed a parameter-efficient dual-encoder using Contrastive Learning (Symmetric InfoNCE): a partially 
+            fine-tuned MPNet for text and a BiGRU with Attention Pooling for motion. Engineered for robustness 
+            with a 256 effective batch size, Exponential Moving Average (EMA), Test-Time Augmentation (temporal 
+            crops, person swaps), and Weighted Rank Blending (Borda count).
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 3-->
+      <div class="project-card has-thumb">
+        <img class="project-thumb" src="images/systemenvol.jpeg" alt="Ozone Measurement System on Drone">
+        <div class="project-body">
+          <div class="project-header">
+            <div class="project-title">
+              Ozone Measurement System on Drone (Embedded IoT Project)
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ahmedloug/MyOzoneDroneProject"
+                 class="badge-link badge-github" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://canva.link/wx9k8uwwbbzurm2"
+                 class="badge-link badge-report" target="_blank" rel="noopener">
+                <i class="fas fa-file-alt"></i> Report
+              </a>
+            </div>
+          </div>
+          <span class="project-date">September 2024 - April 2025</span>
+          <p class="project-description">
+            Designed and developed a low-cost autonomous embedded system (< €150) mounted on a drone for real-time ozone
+            concentration measurement using an ESP8266 microcontroller.
+            Integrated electrochemical ozone sensor (SEN0321), GPS module, SD card for local logging, and Wi-Fi connectivity 
+            to transmit data to a remote server built with Flask + InfluxDB + Grafana.
+            Personally handled the full hardware design, wiring, embedded software development, and network integration.
+            Achieved ~80% correlation with a professional €3000 reference sensor, demonstrating high reliability, energy autonomy, 
+            and lightweight design for drone deployment.
           </p>
         </div>
       </div>
 
       <!-- Project 4 -->
-      <div class="project-card has-thumb">
-        <img class="project-thumb" src="images/benchmark.png" alt="Benchmarking Deep Architectures for Breast Cancer Segmentation">
+      <div class="project-card">
         <div class="project-body">
           <div class="project-header">
             <div class="project-title">
-              Benchmarking Deep Architectures for Breast Cancer Segmentation
+              Punch classification using YOLO-pose estimation
             </div>
             <div class="project-links">
-              <a href="https://github.com/TristanLecourtois/semantic-segmentation"
+              <a href="https://github.com/ahmedloug/Boxing_CV"
                  class="badge-link badge-github" target="_blank" rel="noopener">
                 <i class="fab fa-github"></i> GitHub
               </a>
-              <a href="https://drive.google.com/file/d/1R6kNNf-Khs5Y9vhXeTqS9ASSd-aMLcuD/view?usp=share_link"
-                 class="badge-link badge-report" target="_blank" rel="noopener">
-                <i class="fas fa-file-alt"></i> Report
-              </a>
             </div>
           </div>
-          <span class="project-date">January 2026</span>
+          <span class="project-date">February 2026</span>
           <p class="project-description">
-            Developed a semantic segmentation pipeline for histopathology Whole-Slide Images (WSI)
-            using the BCSS dataset. Implemented and benchmarked U-Net, TransUNet, DenseUNet, and
-            nnU-Net architectures, leveraging a pre-trained ResNet-101 encoder for improved feature
-            representation.
+            Played around to see how well a fine-tuned pose estimation model (YOLO-Pose) can classify 
+            different types of punches (jab, cross, hook, uppercut) from video.
           </p>
         </div>
       </div>
 
-      <!-- Project 3 -->
-      <div class="project-card has-thumb">
-        <img class="project-thumb" src="images/altegrad.png" alt="Cross-Modal Alignment for Molecular Graph Captioning">
-        <div class="project-body">
-          <div class="project-header">
-            <div class="project-title">
-              Cross-Modal Alignment for Molecular Graph Captioning
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/TristanLecourtois/molecular-graph-captioning"
-                 class="badge-link badge-github" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="https://drive.google.com/file/d/1_0xHLeR8E5vqOp4qpOyfch8Ovwoeh7wW/view?usp=sharing"
-                 class="badge-link badge-report" target="_blank" rel="noopener">
-                <i class="fas fa-file-alt"></i> Report
-              </a>
-            </div>
-          </div>
-          <span class="project-date">December 2025</span>
-          <p class="project-description">
-            Developed a hybrid cross-modal framework translating molecular graphs into human-readable
-            captions. Aligned a GINE graph encoder with Galactica-1.3B LLM via a Q-Former projector.
-            Benchmarked three models: dual-encoder retrieval (SciBERT/RoBERTa), GNN-to-T5 generative,
-            and soft-prompting architectures.
-          </p>
-        </div>
-      </div>
+     
 
-      <!-- Project 5 -->
-      <div class="project-card has-thumb">
-        <img class="project-thumb" src="images/jaccard.png" alt="Early Detection of Endometriosis from Patient-Reported Symptoms">
-        <div class="project-body">
-          <div class="project-header">
-            <div class="project-title">
-              Early Detection of Endometriosis from Patient-Reported Symptoms
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/TristanLecourtois/endodetect-based-on-symptoms"
-                 class="badge-link badge-github" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-          <span class="project-date">October 2024</span>
-          <p class="project-description">
-            Developed a non-invasive ML screening tool using 800+ patient-reported symptom entries.
-            Applied Jaccard Index for feature selection, reducing 56 features to a high-impact subset
-            of 24. Benchmarked multiple ML algorithms with 10-fold cross-validation and generated
-            interpretable symptom rankings to accelerate diagnosis.
-          </p>
-        </div>
-      </div>
+      
 
     </div>
   </main>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
-    &copy; 2026 Tristan Lecourtois &mdash;
-    Inspired by <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a>
-    &mdash; Site last updated 2026-03-04
+    &copy; 2026 Ahmed Loughzali &mdash;
+    Inspired by <a href="https://github.com/TristanLecourtois/TristanLecourtois.github.io" target="_blank" rel="noopener">TristanLecourtois.github.io</a> & <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> 
+    &mdash; Site last updated 2026-04-20
   </footer>
 
 </body>
