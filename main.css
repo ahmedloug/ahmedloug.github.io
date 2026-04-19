@@ -296,6 +296,7 @@ a:hover {
   flex-direction: column;
   gap: 1.2rem;
   margin-top: 0.5rem;
+  overflow-x: hidden;
 }
 
 .project-card {
@@ -386,6 +387,8 @@ a:hover {
   display: flex;
   gap: 1.4rem;
   align-items: flex-start;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .project-thumb {
@@ -394,11 +397,14 @@ a:hover {
   border-radius: 6px;
   flex-shrink: 0;
   border: 1px solid var(--border);
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .project-body {
   flex: 1;
   min-width: 0;
+  max-width: 100%;
 }
 
 /* ==========================================================================
