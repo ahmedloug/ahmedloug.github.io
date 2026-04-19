@@ -12,9 +12,9 @@
   --theme-hover:       #024ea4;
   --text-color:        #212121;
   --text-muted:        #757575;
-  --bg:                #ffffff;
-  --bg-secondary:      #f8f9fa;
-  --border:            #e0e0e0;
+  --bg:                #f6f8fa;
+  --bg-secondary:      #ffffff;
+  --border:            #d0d7de;
   --card-shadow:       0 2px 8px rgba(0, 0, 0, 0.07);
   --card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.12);
   --navbar-height:     60px;
