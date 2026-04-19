@@ -24,9 +24,14 @@
   <!-- ===== Navbar ===== -->
   <nav class="navbar">
     <a href="index.html" class="navbar-brand">Ahmed Loughzali</a>
-    <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-nav').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="navbar-controls">
+      <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
     <ul class="navbar-nav">
       <li><a href="index.html">About</a></li>
       <li><a href="portfolio.html" class="active">Projects</a></li>
@@ -160,6 +165,28 @@
     Inspired by <a href="https://github.com/TristanLecourtois/TristanLecourtois.github.io" target="_blank" rel="noopener">TristanLecourtois.github.io</a> & <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> 
     &mdash; Site last updated 2026-04-20
   </footer>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('themeToggle');
+      const prefersDark = localStorage.getItem('theme') === 'dark';
+      
+      if (prefersDark) {
+        document.body.classList.add('dark-mode');
+        if (themeToggle) themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+      
+      window.toggleDarkMode = function() {
+        const isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+          themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+      };
+    })();
+  </script>
 
 </body>
 </html>
