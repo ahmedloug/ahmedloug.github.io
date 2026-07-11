@@ -38,6 +38,36 @@
 
     <div class="projects-list">
 
+      <!-- Project 0 -->
+      <div class="project-card has-thumb">
+        <img class="project-thumb" src="images/jepa.png" alt="Surgical JEPA world model">
+        <div class="project-body">
+          <div class="project-header">
+            <div class="project-title">
+              Surgical JEPA — World Model for Robotic Surgery
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/GauthierBassereau/eb_jepa_hacktheworlds"
+                 class="badge-link badge-github" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <span class="project-date">June 2026</span>
+          <p class="project-description">
+            Built at <strong>Hack the Worlds</strong>, a hackathon organized under
+            <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank" rel="noopener">Yann LeCun</a>
+            (selected among 100 participants out of 650). Adapted EB-JEPA into a surgical robot world model that encodes wrist-camera video into
+            latent states and predicts future states from proprioceptive input — learning entirely in latent
+            space rather than on pixels. Combined a DINOv3 / IMPALA CNN encoder with a causal Transformer
+            predictor conditioned on action vectors, trained with anti-collapse regularization (variance,
+            covariance, and inverse-dynamics terms) on NVIDIA's Open-H-Embodiment suturing dataset. The
+            Transformer variant cut compounding autoregressive error and improved 2-second-horizon LPIPS by
+            ~15% over baseline.
+          </p>
+        </div>
+      </div>
+
       <!-- Project 1 -->
       <div class="project-card has-thumb">
         <img class="project-thumb" src="images/fred.png" alt="FRED dataset sample for drone detection">
@@ -60,8 +90,8 @@
         <span class="project-date">October 2025 - March 2026</span>
         <p class="project-description">
           Wrote a review paper on different ways to detect drones with a focus on spiking neural networks. 
-          Fine tuned several spiking neural network architectures (Spiking YOLOv8, Spiking SSD ...)
-          on a fraction of the FRED dataset for drone detection. Achieved 92% accuracy with a 69M parameters model . 
+          Fine tuned several spiking neural network architectures (Spiking YOLOv8, Spiking SSD...)
+          on a fraction of the FRED dataset for drone detection. Achieved 92% accuracy with a 69M parameters model.
         </p>
       </div>
       </div>
@@ -72,7 +102,7 @@
         <div class="project-body">
           <div class="project-header">
             <div class="project-title">
-              Text to motion retrival using contrastive learning 
+              Text to motion retrieval using contrastive learning
             </div>
             <div class="project-links">
               <a href="https://github.com/ahmedloug/Text-to-motion-retrieval"
@@ -157,7 +187,7 @@
   <footer class="site-footer">
     &copy; 2026 Ahmed Loughzali &mdash;
     Inspired by <a href="https://github.com/TristanLecourtois/TristanLecourtois.github.io" target="_blank" rel="noopener">source repo</a> & <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> 
-    &mdash; Site last updated 2026-04-20
+    &mdash; Site last updated 2026-07-11
   </footer>
 
   <!-- Dark Mode Toggle Script -->
