@@ -40,7 +40,7 @@
 
       <!-- Project 0 -->
       <div class="project-card has-thumb">
-        <img class="project-thumb" src="images/jepa.png" alt="Surgical JEPA world model">
+        <img class="project-thumb" src="images/H-dataset.png" alt="Surgical JEPA world model">
         <div class="project-body">
           <div class="project-header">
             <div class="project-title">
@@ -57,13 +57,17 @@
           <p class="project-description">
             Built at <strong>Hack the Worlds</strong>, a hackathon organized under
             <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank" rel="noopener">Yann LeCun</a>
-            (selected among 100 participants out of 650). Adapted EB-JEPA into a surgical robot world model that encodes wrist-camera video into
-            latent states and predicts future states from proprioceptive input — learning entirely in latent
-            space rather than on pixels. Combined a DINOv3 / IMPALA CNN encoder with a causal Transformer
-            predictor conditioned on action vectors, trained with anti-collapse regularization (variance,
-            covariance, and inverse-dynamics terms) on NVIDIA's Open-H-Embodiment suturing dataset. The
-            Transformer variant cut compounding autoregressive error and improved 2-second-horizon LPIPS by
-            ~15% over baseline.
+            (selected among 100 participants out of 650). Adapted EB-JEPA into a surgical world model that
+            predicts entirely in latent space rather than on pixels, sidestepping the specularities and
+            endoscopic lighting artifacts that dominate raw surgical video. An IMPALA/DINOv3 encoder maps
+            wrist-camera frames to latent states, rolled forward by a causal Transformer predictor
+            conditioned on 32-D bimanual proprioceptive action vectors, and trained with VICReg-style
+            anti-collapse regularization (variance, covariance, temporal-similarity, and inverse-dynamics
+            terms) on the PhysicalAI Open-H-Embodiment Hamlyn suturing dataset. Evaluated on both clean and
+            fully autoregressive rollouts to separate single-step accuracy from compounding drift, the
+            Transformer variant cut the clean/autoregressive gap to a third of the GRU baseline's and
+            improved 2-second-horizon LPIPS by ~15% over baseline — evidence that rollout stability, not
+            encoder capacity, was the binding constraint.
           </p>
         </div>
       </div>
