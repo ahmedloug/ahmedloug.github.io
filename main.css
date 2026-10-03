@@ -241,6 +241,12 @@ a:hover {
   margin-bottom: 1rem;
   font-size: 0.97rem;
 }
+.about-list {
+  margin: 0 0 1rem 1.2rem;
+  font-size: 0.97rem;
+}
+.about-list li { margin-bottom: 0.5rem; }
+.about-list a { color: var(--theme-color); }
 
 /* ==========================================================================
    Publications
@@ -421,6 +427,12 @@ a:hover {
   object-position: center;
 }
 
+/* Wide thumbnails (diagrams) keep their aspect ratio instead of a square crop */
+.project-thumb.wide {
+  width: 240px;
+  height: auto;
+}
+
 .project-body {
   flex: 1;
   min-width: 0;
@@ -548,7 +560,8 @@ a:hover {
   .project-card.has-thumb {
     flex-direction: column;
   }
-  .project-thumb {
+  .project-thumb,
+  .project-thumb.wide {
     width: 100%;
     height: auto;
   }

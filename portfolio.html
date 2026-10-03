@@ -64,6 +64,34 @@
         </div>
       </div>
 
+      <!-- Project: OncoVIA -->
+      <div class="project-card has-thumb">
+        <img class="project-thumb wide" src="images/GE-Mistral-hack-thumb.png" alt="OncoVIA pipeline: DICOM data extraction, retrieval-augmented generation, adapted report generation">
+        <div class="project-body">
+          <div class="project-header">
+            <div class="project-title">
+              OncoVIA 🧬: Multimodal Pipeline for Oncology Follow-up
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ahmedloug/OncoVIA"
+                 class="badge-link badge-github" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <span class="project-date">February 2026</span>
+          <p class="project-description">
+            🏆 1st place at <strong>Unboxed</strong>, a 30-hour hackathon with GE HealthCare and Mistral AI.
+            OncoVIA goes from raw CT scans to a follow-up report. The 3D part reads DICOM volumes, segments
+            the anatomy with TotalSegmentator, and works out where each tumor sits in the body (which organ,
+            which lobe) along with its volume and diameter. The generative part hands those measurements to
+            an agentic RAG pipeline built on Mistral models, which digs up the patient's previous reports and
+            writes two versions: a RECIST 1.1 report for the radiologist, and a plain-language summary for
+            the patient. All data in the repo is synthetic.
+          </p>
+        </div>
+      </div>
+
       <!-- Project 1 -->
       <div class="project-card has-thumb">
         <img class="project-thumb" src="images/fred.png" alt="FRED dataset sample for drone detection">
@@ -90,32 +118,6 @@
           on a fraction of the FRED dataset for drone detection. Achieved 92% accuracy with a 69M parameters model.
         </p>
       </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card has-thumb">
-        <img class="project-thumb" src="images/tmr.png" alt="Text to Motion Retrieval">
-        <div class="project-body">
-          <div class="project-header">
-            <div class="project-title">
-              Text to motion retrieval using contrastive learning
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ahmedloug/Text-to-motion-retrieval"
-                 class="badge-link badge-github" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-          <span class="project-date">February 2026</span>
-          <p class="project-description">
-            Top 3 solution for a multimodal Kaggle competition retrieving 3D motion capture sequences from text. 
-            Designed a parameter-efficient dual-encoder using Contrastive Learning (Symmetric InfoNCE): a partially 
-            fine-tuned MPNet for text and a BiGRU with Attention Pooling for motion. Engineered for robustness 
-            with a 256 effective batch size, Exponential Moving Average (EMA), Test-Time Augmentation (temporal 
-            crops, person swaps), and Weighted Rank Blending (Borda count).
-          </p>
-        </div>
       </div>
 
       <!-- Project 3-->
@@ -149,32 +151,6 @@
           </p>
         </div>
       </div>
-
-      <!-- Project 4 -->
-      <div class="project-card">
-        <div class="project-body">
-          <div class="project-header">
-            <div class="project-title">
-              Punch classification using YOLO-pose estimation
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ahmedloug/Boxing_CV"
-                 class="badge-link badge-github" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-          <span class="project-date">February 2026</span>
-          <p class="project-description">
-            Played around to see how well a fine-tuned pose estimation model (YOLO-Pose) can classify 
-            different types of punches (jab, cross, hook, uppercut). Demo video on the github repo.
-          </p>
-        </div>
-      </div>
-
-     
-
-      
 
     </div>
   </main>
