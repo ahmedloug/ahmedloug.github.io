@@ -26,7 +26,7 @@
     <ul class="navbar-nav">
       <li><a href="index.html">About</a></li>
       <li><a href="portfolio.html" class="active">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="publications.html">Publications</a></li>
       <li><a href="images/Resume.pdf" target="_blank">CV</a></li>
     </ul>
   </nav>
@@ -57,17 +57,9 @@
           <p class="project-description">
             Built at <strong>Hack the Worlds</strong>, a hackathon organized under
             <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank" rel="noopener">Yann LeCun</a>
-            . Adapted EB-JEPA into a surgical world model that
-            predicts entirely in latent space rather than on pixels, sidestepping the specularities and
-            endoscopic lighting artifacts that dominate raw surgical video. An IMPALA/DINOv3 encoder maps
-            wrist-camera frames to latent states, rolled forward by a causal Transformer predictor
-            conditioned on 32-D bimanual proprioceptive action vectors, and trained with VICReg-style
-            anti-collapse regularization (variance, covariance, temporal-similarity, and inverse-dynamics
-            terms) on the PhysicalAI Open-H-Embodiment Hamlyn suturing dataset. Evaluated on both clean and
-            fully autoregressive rollouts to separate single-step accuracy from compounding drift, the
-            Transformer variant cut the clean/autoregressive gap to a third of the GRU baseline's and
-            improved 2-second-horizon LPIPS by ~15% over baseline — evidence that rollout stability, not
-            encoder capacity, was the binding constraint.
+            . An action-conditioned latent world model (EB-JEPA) that predicts future latent
+            states from wrist-camera video and proprioception on surgical data. Includes ablations on the
+            anti-collapse terms, and a Transformer predictor that reduces autoregressive compounding error.
           </p>
         </div>
       </div>
@@ -191,7 +183,7 @@
   <footer class="site-footer">
     &copy; 2026 Ahmed Loughzali &mdash;
     Inspired by <a href="https://github.com/TristanLecourtois/TristanLecourtois.github.io" target="_blank" rel="noopener">source repo</a> & <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> 
-    &mdash; Site last updated 2026-07-11
+    &mdash; Site last updated 2026-10-03
   </footer>
 
   <!-- Dark Mode Toggle Script -->

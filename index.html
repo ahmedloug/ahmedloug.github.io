@@ -26,7 +26,7 @@
     <ul class="navbar-nav">
       <li><a href="index.html" class="active">About</a></li>
       <li><a href="portfolio.html">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="publications.html">Publications</a></li>
       <li><a href="images/Resume.pdf" target="_blank">CV</a></li>
     </ul>
   </nav>
@@ -39,17 +39,13 @@
       <aside class="profile-col">
         <img src="images/me.png" alt="Ahmed Loughzali" class="profile-photo">
         <div class="profile-name">Ahmed Loughzali</div>
-        <div class="profile-title">MSc CS Student<br>AI engineering & research</div>
-        <div class="profile-institution">IMT Nord Europe</div>
+        <div class="profile-title">MSc student in AI &middot; Embodied AI & representation learning</div>
+        <div class="profile-institution">IMT Nord Europe (MSc)<br>GIST (exchange, Fall 2026)</div>
         <div class="profile-divider"></div>
         <ul class="profile-social">
           <li>
             <i class="fa-solid fa-location-dot"></i>
-            <span>Paris, France</span>
-          </li>
-          <li>
-            <i class="fas fa-briefcase"></i>
-            <span>Enchanted tools</span>
+            <span>Gwangju, South Korea (currently)</span>
           </li>
           <li>
             <a href="mailto:ahmed.loughzali@gmail.com">
@@ -66,6 +62,13 @@
               <i class="fab fa-github"></i>GitHub
             </a>
           </li>
+          <!-- TODO: add Google Scholar profile link
+          <li>
+            <a href="TODO_SCHOLAR_LINK" target="_blank" rel="noopener">
+              <i class="fas fa-graduation-cap"></i>Google Scholar
+            </a>
+          </li>
+          -->
         </ul>
       </aside>
 
@@ -73,38 +76,43 @@
       <div class="about-content">
 
         <p>
-          I'm currently finishing a MSc in Computer Science (Majoring in AI & Data Science) at
-          <a href="https://imt-nord-europe.fr/" target="_blank" rel="noopener">IMT Nord Europe</a>.
-          This fall I'm heading to
-          <a href="https://www.gist.ac.kr/en/main.html" target="_blank" rel="noopener">GIST</a>
-          in South Korea 🇰🇷 !
+          I'm an MSc student in AI at <a href="https://imt-nord-europe.fr/" target="_blank" rel="noopener">IMT Nord Europe</a>, currently on exchange at
+          <a href="https://www.gist.ac.kr/en/main.html" target="_blank" rel="noopener">GIST</a> in South Korea 🇰🇷. I work at the intersection of embodied AI,
+          representation learning and multimodal perception, with a focus on world models and on understanding when
+          learned representations break.
         </p>
 
         <p>
-          Right now I'm an AI research Intern working on HRI at
-          <a href="https://enchanted.tools/" target="_blank" rel="noopener">Enchanted Tools</a>
-          — they are building
-          <a href="https://enchanted.tools/robot" target="_blank" rel="noopener">Mirokais</a>,
-          "Europe's most advanced social humanoid robots". My work is mostly figuring out when the robot has to shut up and listen.
+          I've worked in pretty different setups, from shipping models on real hardware to academic research:
         </p>
 
         <p>
-          Before that, I deployed an on-device TTS system
-          for an autonomous vehicle platform at
-          <a href="https://ferromobile.fr/fr/accueil/" target="_blank" rel="noopener">Ferromobile</a>.
+          At <a href="https://enchanted.tools/" target="_blank" rel="noopener">Enchanted Tools</a>, I worked on the brain of
+          <a href="https://enchanted.tools/robot" target="_blank" rel="noopener">Mirokaï</a>, a social humanoid robot: turn-taking, user barge-in and
+          backchanneling. Mostly teaching a robot when to talk and when to shut up and listen. Part of this work
+          turned into a paper accepted at a NeurIPS 2026 workshop.
         </p>
 
         <p>
-          I'm drawn to AI that has to survive contact with the real world — embodied AI, world models,
-          and multimodal perception across vision, speech, and language. Anything that has to perceive,
-          act, and not fall over. I like working in multi-disciplinary teams across the full spectrum,
-          from hardware to software!
+          At <a href="https://ferromobile.fr/fr/accueil/" target="_blank" rel="noopener">Ferromobile</a>, I deployed an on-device TTS system and a local RAG
+          pipeline on an autonomous vehicle platform. Embedded hardware has strong opinions about your latency budget.
         </p>
 
         <p>
-          Longer term, I'm looking for a 6-month research internship starting February 2027, before
-          starting a PhD in fall 2027. I really want to end up doing research that actually reaches
-          people. At the end of the day, my goal is to build systems that do good.
+          Through the Algoverse research program, I led a first-author project on adversarial attacks against discrete
+          medical image tokenizers, accepted at two NeurIPS 2026 workshops, including the GenAI4Health main track.
+        </p>
+
+        <p>
+          At GIST, I'm building an action-conditioned world model for collision avoidance with a robotics startup,
+          while taking courses in 3D vision and robot control.
+        </p>
+
+        <p>
+          I'm drawn to AI that has to survive contact with the real world. Anything that has to perceive, act, and not
+          fall over. I'm looking for a 6-month research internship starting January to March 2027, before a PhD in fall
+          2027, ideally on work that reaches people in healthcare or assistive robotics. Feel free to reach out if you
+          want to chat!
         </p>
 
         <!-- News -->
@@ -112,26 +120,47 @@
         <table class="news-table">
           <tbody>
             <tr>
+              <td class="news-date">Oct 2026</td>
+              <td class="news-text">
+                🎉 Two papers accepted at NeurIPS 2026 workshops: my first-author paper on adversarial attacks against
+                medical image tokenizers (GenAI4Health main track and NewInML), and our backchannel prediction paper with
+                Enchanted Tools (ReMuCAI, Paris). See you in Paris in December!
+              </td>
+            </tr>
+            <tr>
+              <td class="news-date">Sept 2026</td>
+              <td class="news-text">
+                Started my exchange semester at GIST 🇰🇷 and a research project with Florigen Robotics on
+                action-conditioned world models for collision avoidance.
+              </td>
+            </tr>
+            <tr>
+              <td class="news-date">Aug 2026</td>
+              <td class="news-text">
+                Wrapped up my internship at Enchanted Tools.
+              </td>
+            </tr>
+            <tr>
               <td class="news-date">June 2026</td>
               <td class="news-text">
-                Selected among 100 participants out of 650 for <strong>Hack the Worlds</strong>, a hackathon organized under
-                <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank" rel="noopener">Yann LeCun</a>.
-                Presented <strong>Surgical JEPA</strong>, a self-supervised approach for surgical scene understanding.
+                Selected among 100 participants out of 650 for <strong>Hack the World(s)</strong>, a world models hackathon
+                endorsed by <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank" rel="noopener">Yann LeCun</a>. Led a team that built
+                <strong>Surgical JEPA</strong>, an action-conditioned latent world model trained on surgical video.
                 <a href="https://github.com/GauthierBassereau/eb_jepa_hacktheworlds" target="_blank" rel="noopener">[Project]</a>
               </td>
             </tr>
             <tr>
               <td class="news-date">May 2026</td>
               <td class="news-text">
-                Researched the robustness of discrete tokenizers in medical applications as part of the
-                <strong>Algoverse</strong> AI research program.
+                Joined the <strong>Algoverse</strong> AI research program, working on the robustness of discrete
+                tokenizers in medical imaging.
               </td>
             </tr>
             <tr>
               <td class="news-date">April 2026</td>
               <td class="news-text">
-                Joined Enchanted Tools 🤖 as an AI research Intern, working under Mohammed Hafsati on the cutest humanoid
-                robot in the World!
+                Joined Enchanted Tools 🤖 as an AI research intern, working with Mohammed Hafsati on the cutest humanoid
+                robot in the world!
               </td>
             </tr>
             <tr>
@@ -160,7 +189,7 @@
   <footer class="site-footer">
     &copy; 2026 Ahmed Loughzali &mdash;
     Inspired by <a href="https://github.com/TristanLecourtois/TristanLecourtois.github.io" target="_blank" rel="noopener">source repo</a> & <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> 
-    &mdash; Site last updated 2026-07-11
+    &mdash; Site last updated 2026-10-03
   </footer>
 
   <!-- Dark Mode Toggle Script -->

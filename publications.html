@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications | Ahmed Loughzali</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Ahmed Loughzali</a>
+    <div class="navbar-controls">
+      <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <ul class="navbar-nav">
+      <li><a href="index.html">About</a></li>
+      <li><a href="portfolio.html">Projects</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="images/Resume.pdf" target="_blank">CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Main content ===== -->
+  <main class="page-content">
+
+    <h1 class="page-title">Publications</h1>
+
+    <h2 class="section-heading">Workshop papers</h2>
+    <ol class="pub-list">
+
+      <li class="pub-entry">
+        <div class="pub-title">Adversarial Attacks Expose Path-Dependent Failures in Discrete Medical Image Tokenizers</div>
+        <div class="pub-authors"><strong>Ahmed Loughzali</strong>, Akash Yallamati, Aadiv Reki, Aslan Shaukat Vaida, Jeyashree Krishnan</div>
+        <div class="pub-venue">GenAI4Health @ NeurIPS 2026 (Main Track) &middot; NewInML @ NeurIPS 2026</div>
+        <div class="pub-links">
+          <!-- TODO: replace with <a href="ARXIV_URL" target="_blank" rel="noopener">[arXiv]</a> once TODO_ARXIV_LINK_1 exists -->
+          [arXiv] coming soon &middot; Work done in the Algoverse research program
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-title">Multi-Party Backchannel Prediction: a Diagnosis, a Benchmark, and a Ceiling</div>
+        <div class="pub-authors">Mohammed Hafsati, <strong>Ahmed Loughzali</strong></div>
+        <div class="pub-venue">ReMuCAI @ NeurIPS 2026 (Paris)</div>
+        <div class="pub-links">
+          <!-- TODO: replace with <a href="ARXIV_URL" target="_blank" rel="noopener">[arXiv]</a> once TODO_ARXIV_LINK_2 exists -->
+          [arXiv] coming soon &middot; Work done at Enchanted Tools
+        </div>
+      </li>
+
+    </ol>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    &copy; 2026 Ahmed Loughzali &mdash;
+    Inspired by <a href="https://github.com/TristanLecourtois/TristanLecourtois.github.io" target="_blank" rel="noopener">source repo</a> & <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> 
+    &mdash; Site last updated 2026-10-03
+  </footer>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('themeToggle');
+      const prefersDark = localStorage.getItem('theme') === 'dark';
+      
+      if (prefersDark) {
+        document.body.classList.add('dark-mode');
+        if (themeToggle) themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+      
+      window.toggleDarkMode = function() {
+        const isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+          themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+      };
+    })();
+  </script>
+
+</body>
+</html>
