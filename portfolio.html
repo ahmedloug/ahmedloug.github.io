@@ -81,13 +81,10 @@
           </div>
           <span class="project-date">February 2026</span>
           <p class="project-description">
-            🏆 1st place at <strong>Unboxed</strong>, a 30-hour hackathon with GE HealthCare and Mistral AI.
-            OncoVIA goes from raw CT scans to a follow-up report. The 3D part reads DICOM volumes, segments
-            the anatomy with TotalSegmentator, and works out where each tumor sits in the body (which organ,
-            which lobe) along with its volume and diameter. The generative part hands those measurements to
-            an agentic RAG pipeline built on Mistral models, which digs up the patient's previous reports and
-            writes two versions: a RECIST 1.1 report for the radiologist, and a plain-language summary for
-            the patient. All data in the repo is synthetic.
+            🏆 Won 1st place at <strong>Unboxed</strong>, a 30-hour hackathon with GE HealthCare and Mistral AI.
+            Our pipeline reads a CT scan in 3D, segments it, and works out where each tumor is and how big it is.
+            A Mistral agent then pulls the patient's previous reports and writes two follow-ups: one for the
+            radiologist, one the patient can actually read.
           </p>
         </div>
       </div>
